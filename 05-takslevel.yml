@@ -1,12 +1,11 @@
 - name: play level variabless
   hosts: web
-  vars: 
-   course: "Devops"
-   duaration: "140hrs"
-   trainer: "Shiva"
+  vars_files:
+   - couse.yaml
+  
   tasks:
    - name: Print variabless
-     vars: 
-      course: "Ansible"
+     #vars: 
+      #course: "Ansible"
      ansible.builtin.debug:
       msg: "course is: {{ course }}, trainer is: {{ trainer }}"
