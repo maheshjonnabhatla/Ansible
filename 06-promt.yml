@@ -2,11 +2,11 @@
   hosts: web
   vars_prompt: 
    - name: username
-     promt: please enter username
+     prompt: please enter username
      private: false
 
    - name: password
-     promt: please enter password
+     prompt: please enter password
      private: True
 
   tasks:
