@@ -1,6 +1,6 @@
 - name: print username and password
   hosts: web
-  vars_promt: 
+  vars_prompt: 
    - name: username
      promt: please enter username
      private: false
