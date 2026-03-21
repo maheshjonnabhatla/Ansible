@@ -1,0 +1,6 @@
+- name: play level variabless
+  hosts: web
+  tasks:
+   - name: Print variabless
+     ansible.builtin.debug:
+      msg: "course is: {{ course }}, trainer is: {{ trainer }}"
