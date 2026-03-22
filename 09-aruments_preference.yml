@@ -3,7 +3,7 @@
   vars:
    Name: "Ansible from Mahesh"
   vars_files:
-   - course.yaml 
+   - couse.yaml 
 
   vars_prompt: 
    - name: Name
