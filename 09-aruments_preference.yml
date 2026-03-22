@@ -1,0 +1,17 @@
+- name: variable prefence
+  hosts: web
+  vars:
+   Name: "Ansible from Mahesh"
+  vars_files:
+   - course.yaml 
+
+  Vars_prompt: 
+   - name: Name
+     prompt: please enter name
+     private: false
+  tasks:
+   - name: print name
+     vars: 
+      Name: "Ansible from yogita"
+      ansible.builtin.debug:
+       msg: "Hi {{ Name }}"
